@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Mail, Github, Linkedin } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 export const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -18,6 +19,15 @@ export const Hero = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
+          {/* Profile Photo */}
+          <div className="mb-8">
+            <img 
+              src={profilePhoto} 
+              alt="Siri Varsha profile photo"
+              className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto object-cover border-4 border-primary/20 shadow-2xl"
+            />
+          </div>
+
           {/* Greeting */}
           <div className="inline-block mb-6 px-4 py-2 bg-gradient-glass backdrop-blur-md rounded-full border border-border/50">
             <span className="text-muted-foreground">👋 Hello, I'm</span>
